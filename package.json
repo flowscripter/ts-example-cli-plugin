@@ -66,6 +66,6 @@
     },
     "dependencies": {
         "debug": "4.1.1",
-        "@flowscripter/cli-framework": "2.0.1"
+        "@flowscripter/cli-framework": "3.0.1"
     }
 }
