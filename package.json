@@ -1,14 +1,14 @@
 {
-    "name": "@flowscripter/ts-template",
+    "name": "@flowscripter/ts-example-cli-plugin",
     "version": "0.0.0",
-    "description": "Template TypeScript project.",
+    "description": "Example TypeScript plugin for the cli-framework.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/flowscripter/ts-template"
+        "url": "https://github.com/flowscripter/ts-example-cli-plugin"
     },
-    "homepage": "https://github.com/flowscripter/ts-template",
+    "homepage": "https://github.com/flowscripter/ts-example-cli-plugin",
     "bugs": {
-        "url": "https://github.com/flowscripter/ts-template/issues"
+        "url": "https://github.com/flowscripter/ts-example-cli-plugin/issues"
     },
     "keywords": [
         "typescript"
@@ -25,7 +25,6 @@
         "access": "public"
     },
     "main": "dist/node.js",
-    "browser": "dist/browser.js",
     "type": "module",
     "files": [
         "dist/**/*"
@@ -38,9 +37,7 @@
         "prebuild": "npx rimraf dist",
         "build": "npx rollup -c",
         "watch": "npx rollup -c --watch",
-        "test": "npx jest",
-        "lint": "npx eslint ./src/**/*.ts ./test/**/*.ts",
-        "docs": "npx typedoc --moduleResolution node src"
+        "lint": "npx eslint ./src/**/*.ts"
     },
     "devDependencies": {
         "@commitlint/cli": "8.3.5",
@@ -49,15 +46,11 @@
         "@flowscripter/renovate-config": "1.0.3",
         "@flowscripter/tsconfig": "1.2.0",
         "@types/debug": "4.1.5",
-        "@types/jest": "25.2.1",
         "@typescript-eslint/eslint-plugin": "2.30.0",
         "@typescript-eslint/parser": "2.29.0",
         "eslint": "6.8.0",
         "eslint-plugin-import": "2.20.2",
-        "eslint-plugin-jest": "23.8.2",
-        "gulp": "4.0.2",
         "husky": "4.2.5",
-        "jest": "25.4.0",
         "rimraf": "3.0.2",
         "rollup": "2.7.3",
         "rollup-plugin-cleanup": "3.1.1",
@@ -68,15 +61,13 @@
         "rollup-plugin-peer-deps-external": "2.2.2",
         "rollup-plugin-typescript2": "0.27.0",
         "semantic-release": "17.0.7",
-        "sonarqube-scanner": "2.6.0",
         "temp-dir": "2.0.0",
-        "ts-jest": "25.4.0",
-        "typedoc": "0.17.6",
-        "typedoc-plugin-external-module-name": "3.0.0",
         "typescript": "3.8.3"
     },
     "peerDependencies": {
         "debug": "4.1.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@flowscripter/cli-framework": "2.0.0"
+    }
 }
