@@ -37,7 +37,9 @@ module.exports = [
             'events',
             'buffer',
             'constants',
-            'readable-stream'
+            'readable-stream',
+            '@flowscripter/cli-framework',
+            '@flowscripter/esm-dynamic-plugins'
         ],
         plugins: [
             peerDepsExternal(),
