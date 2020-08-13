@@ -65,6 +65,6 @@
     },
     "dependencies": {
         "@flowscripter/cli-framework": "5.4.13",
-        "@flowscripter/esm-dynamic-plugins": "1.5.14"
+        "@flowscripter/esm-dynamic-plugins": "1.5.15"
     }
 }
